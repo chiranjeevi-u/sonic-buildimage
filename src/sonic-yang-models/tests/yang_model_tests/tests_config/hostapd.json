@@ -18,9 +18,9 @@
                     {
                         "username": "username1",
                         "password": "password1",
-			            "auth_type": "eap-md5",
-			            "sessn_timeout": "60",
-			            "vlan_id": "20"
+		        "auth_type": "eap-md5",
+			"session_timeout": "60",
+                        "vlan_id": "20"
                     }
                 ]
             }
