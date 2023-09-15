@@ -81,7 +81,7 @@ module sonic-hostapd {
                     description "VLAN ID associated with the authorized client";
                 }
 
-                leaf sessn_timeout {
+                leaf session_timeout {
                     type uint32;
                     description "Client session timeout in seconds";
                 }
