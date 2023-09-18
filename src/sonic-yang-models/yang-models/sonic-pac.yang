@@ -23,7 +23,7 @@ module sonic-pac {
         "SONiC PAC";
 
     revision 2023-09-15 {
-        description "Updated with CG changes.";
+        description "Enhancement: Added MAB UserConfig and PAC GlobalConfig Functionality, Contributed by CG.";
     }
 
     revision 2023-03-28 {
