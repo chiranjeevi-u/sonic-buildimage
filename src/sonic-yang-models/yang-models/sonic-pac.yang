@@ -133,11 +133,11 @@ module sonic-pac {
     typedef access_type_enumeration {
         type enumeration {
             enum allow;
-            enum deny;
+         /* enum deny; */
         }
     }
 
-    typedef user_auth_enumeration {
+    typedef pac_auth_enumeration {
         type enumeration {
             enum remote {
                 description "Configure authmgr authentication type as remote";
@@ -303,7 +303,7 @@ module sonic-pac {
                 description "Global PAC configuration.";
 
                 leaf auth_order_list {
-                    type user_auth_enumeration;
+                    type pac_auth_enumeration;
                     description "Order list of authentication mechanisms used by PAC. Must be 'remote' or 'local'.";
                 }
             }
