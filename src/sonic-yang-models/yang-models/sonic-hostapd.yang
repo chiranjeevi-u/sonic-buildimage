@@ -46,44 +46,47 @@ module sonic-hostapd {
                         "Indicates whether dot1x/hostapd is enabled/disabled on the switch.";
                 }
             }
-        }
 
-        container HOSTAPD_USER_CONFIG {
-            list HOSTAPD_USER_CONFIG_LIST {
-                key "username";
-                description "User configuration for HOSTAPD";
-
-                leaf username {
-                    type string {
-                        length 1..32;
+            container USER_CONFIG {
+                description
+                    "Container for hostapd global config.";
+                
+                list USER_CONFIG_LIST {
+                    key "username";
+                    description "User configuration for HOSTAPD";
+    
+                    leaf username {
+                        type string {
+                            length 1..32;
+                        }
+                        description "Username of the user";
                     }
-                    description "Username of the user";
-                }
-
-                leaf password {
-                    type string {
-                        length 1..255;
+    
+                    leaf password {
+                        type string {
+                            length 1..255;
+                        }
+                        description "Password of the user";
                     }
-                    description "Password of the user";
-                }
-
-                leaf auth_type {
-                    type auth_type_enumeration;
-                    default "eap-md5";
-                    description "Auth type for the user";
-                }
-
-                leaf vlan_id {
-                    type uint16 {
-                        range 1..4095;
+    
+                    leaf auth_type {
+                        type auth_type_enumeration;
+                        default "eap-md5";
+                        description "Auth type for the user";
                     }
-
-                    description "VLAN ID associated with the authorized client";
-                }
-
-                leaf session_timeout {
-                    type uint32;
-                    description "Client session timeout in seconds";
+    
+                    leaf vlan_id {
+                        type uint16 {
+                            range 1..4095;
+                        }
+    
+                        description "VLAN ID associated with the authorized client";
+                    }
+    
+                    leaf session_timeout {
+                        type uint32;
+                        description "Client session timeout in seconds";
+                    }
                 }
             }
         }
