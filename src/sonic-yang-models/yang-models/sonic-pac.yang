@@ -296,7 +296,7 @@ module sonic-pac {
             }
         }
 
-        container PAC_GLOBAL_CONFIG {
+        container PAC_CONFIG {
             description "PAC global configuration.";
 
             container global {
