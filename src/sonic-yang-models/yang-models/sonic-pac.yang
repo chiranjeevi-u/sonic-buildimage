@@ -22,8 +22,8 @@ module sonic-pac {
     description
         "SONiC PAC";
 
-    revision 2023-09-15 {
-        description "Enhancement: Added MAB UserConfig and PAC GlobalConfig Functionality, Contributed by CG.";
+    revision "2023-09-15" {
+        description "Enhancement: Added MAB UserConfig and PAC Config Functionality, Contributed by CG.";
     }
 
     revision 2023-03-28 {
