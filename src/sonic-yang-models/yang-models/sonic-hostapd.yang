@@ -49,7 +49,7 @@ module sonic-hostapd {
 
             container USER_CONFIG {
                 description
-                    "Container for hostapd global config.";
+                    "Container for hostapd user config.";
                 
                 list USER_CONFIG_LIST {
                     key "username";
