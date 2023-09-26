@@ -7,6 +7,10 @@ module sonic-pac {
         prefix yang;
     }
 
+    import sonic-port {
+        prefix prt;
+    }
+
     description
         "SONiC PAC";
 
