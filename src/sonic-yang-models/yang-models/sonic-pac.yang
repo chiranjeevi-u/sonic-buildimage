@@ -7,18 +7,6 @@ module sonic-pac {
         prefix yang;
     }
 
-    import sonic-types {
-        prefix stypes;
-    }
-
-    import sonic-port {
-        prefix prt;
-    }
-
-    import sonic-interface {
-        prefix interface;
-    }
-
     description
         "SONiC PAC";
 
